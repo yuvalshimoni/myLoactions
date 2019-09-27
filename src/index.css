@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font: 16px 'Open Sans Hebrew', Arial, sans-serif !important; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f6f7f8;
+  direction: ltr !important;
+}
+ 
+.box {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+
+}
+
+.box .head { 
+  height: 70px;
+  background: #fff;
+  border-bottom: 1px solid #e0e6e8;
+  padding: 15px 25px;
+}
+.box .head h2 { text-align: center; }
+.box .inner { padding: 30px 25px;}
+.box li { list-style-type: none; }
+/* h1, h2, h3, h4, th {
+    font-family: 'Open Sans Hebrew Condensed', sans-serif;
+} */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header { position: fixed; 
+  top: 0px; right: 0px; left: 0px; height: 60px;z-index: 999;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+  pointer-events: auto;
+}
+
+.nav { 
+  margin: 0px;    
+  display: flex;
+  align-items: center;
+  height: 60px;
+  float: left;
+
+}
+.nav li{ 
+  display: inline-block; 
+  margin-left: 30px;   
+  text-decoration: none;}
+
+  .nav li a { text-decoration: none; color: #282c34;   font-size: 1.2rem; }
+  .nav li a.active { font-weight: bold; color:#21ba45; }
+
+  .centered { max-width: 850px; margin: 0 auto; position: relative; clear: both;}
+ 
+
+  ul li { list-style-type: none !important; }
+  .clr:after { content: ''; display: block;  clear: both; }
+
+  .trCategory .ui.form .fields { margin: 0px; }
+  /* -- head page */ 
+  .headPage { margin-bottom: 20px; display: flex; align-items: center; }
+  .headPage h1 { }
+  .headPage .linkBtn {  font-size: 18px; color: #282c34; border-bottom: 2px solid #21ba45; cursor: pointer;position: absolute;
+    right: 0px;  }
+
+   /* List */
+   i.icon, i.icons { margin: 0; }
+  .List { padding: 0; }
+  .listLi { background: #fff;border-radius: 2px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; padding: 10px 15px; margin-bottom: 10px; display: flex; align-items: center;position: relative; }
+  .listLi h3 { margin: 0px; }
+  .listLi .edits { position: absolute; right: 20px;display: flex;}
+  .listLi .edits .btns { transition: all 0.2s; border-radius: 100%; cursor: pointer;     height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .listLi .edits span { font-size: 20px;}
+  .listLi .edits .btns { font-size: 18px; margin-left: 5px }
+
+  .TrLocation .edits.open { position: absolute; bottom: 15px; right: 15px;}
+
+  /* newCat */
+  .newCat { margin-bottom: 20px; }
+
+  .FiltersLocations { margin-bottom: 30px; text-align: left; }
+  .FiltersLocations .field label { display: block; margin-bottom: 10px; text-align: left; font-size: 16px; }
+  .ui.dropdown>.text { font-size: 16px !important; }
+  .ui.selection.dropdown { min-height: 20px !important; padding: 10px !important;  }
+  .ui.selection.dropdown>.delete.icon,
+   .ui.selection.dropdown>.dropdown.icon,
+    .ui.selection.dropdown>.search.icon { padding: 12px !important;  }
+
+    /* loactionPage */
+
+    .loactionPage .box .head { position: relative; display: flex; justify-content: flex-start;  }
+    .loactionPage .box .head .btns { display: flex;height: 100%; align-items: center;  }
+    .loactionPage .box .head .btns h4 { margin: 0; margin-left: 20px;cursor: pointer; }
+    .loactionPage .box .head .btns h4.active { border-bottom: 2px solid #21ba45;}
+    .loactionPage .box .inner ul { text-align: left;  }
+    .loactionPage .box .inner ul li { margin-bottom: 15px;}
+    .loactionPage .box .inner ul li h5 {display: inline; margin: 0px;font-size: 18px; }
+    .loactionPage .box .inner ul li span { font-size: 18px;}
+
+
+    /* Footer */
+
+    footer {
+      position: fixed;
+      bottom: 0px;
+      right: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 222;
+      border-top: 1px solid #21ba45;
+      display: flex !important; 
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+  }
+
+  footer ul {  margin:  0 auto; float: auto !important; padding:15px 0px !important;  }
+  footer ul li { margin-left: 0px !important;  padding: 10px 20px; }
+  footer ul li a { display: flex;flex-direction: column; justify-content: center;     align-items: center;}
