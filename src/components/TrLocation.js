@@ -2,16 +2,11 @@ import React, { Fragment, useState } from 'react'
 import { Icon } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux'
-import {
-    Button,
-    Form,
-    Input
-  } from 'semantic-ui-react'
 
-import { removeLocation, updateLocation } from '../actions/locationsActions'
+// Actions
+import { removeLocation } from '../actions/locationsActions'
 
-//hooks
-import useForm from '../hooks/useForm'
+// Components
 import EditLocation from './EditLocation'
 
 function TrLocation ({ item, dispatch })  {
@@ -19,7 +14,7 @@ function TrLocation ({ item, dispatch })  {
     const { id, name } = item
     const [editMode, setEditMode] = useState( false )
 
-    const removeItem = (id) =>  dispatch(removeLocation(id))
+    const removeItem = (id) =>  dispatch( removeLocation(id) )
 
     return (
         <li className="listLi TrLocation" key={id} >
