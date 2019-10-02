@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
-import {
-    Button,
-    Form,
-    Input
-  } from 'semantic-ui-react'
+import { Form } from 'semantic-ui-react'
   
   import { addLocation } from '../actions/locationsActions'
+
   //hooks
   import useForm from '../hooks/useForm'
 
@@ -68,11 +65,7 @@ function NewLoaction ({dispatch,options, callBack}){
   }
 
 
-function isFloat(n){
-    return Number(n) === n && n % 1 !== 0;
-}
-
-  const mapStateToProps = ({categories}) => {
+const mapStateToProps = ({categories}) => {
 
     const options = Object.values( categories ).map( item => ({
          key: item.id, 
@@ -84,6 +77,6 @@ function isFloat(n){
         options
     }
 
-  }
+}
 
-   export default connect(mapStateToProps)(NewLoaction)
+export default connect(mapStateToProps)(NewLoaction)
