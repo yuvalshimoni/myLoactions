@@ -6,7 +6,6 @@ import { connect } from 'react-redux'
 import InitialStore from './actions/index'
 
 // Components
-import Nav from './components/Nav'
 import Footer from './components/Footer'
 import DivWrp from './components/DivWrp'
 import Loader from './components/Loader'
